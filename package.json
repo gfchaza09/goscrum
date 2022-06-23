@@ -1,6 +1,7 @@
 {
   "name": "goscrum",
   "version": "0.1.0",
+  "homepage": "https://gfchaza09.github.io/goscrum",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
@@ -12,6 +13,7 @@
     "@testing-library/user-event": "^13.2.1",
     "formik": "^2.2.9",
     "framer-motion": "^6.3.3",
+    "gh-pages": "^4.0.0",
     "msw": "^0.42.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
