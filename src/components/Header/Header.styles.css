@@ -1,0 +1,119 @@
+header {
+    box-shadow: 0 2px 5px #dbdbdbdb;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 12px 15px;
+}
+
+header > img {
+    width: 100px;
+    height: 24px;
+}
+
+header > div > .close_button {
+    cursor: pointer;
+    color: var(--global-primary-color);
+}
+
+.wrapper_right_header {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 42px;
+}
+
+.wrapper_right_header div {
+    padding-right: 16px;
+}
+
+.wrapper_right_header div button {
+    transition: all .3s ease-out;
+    background-color: var(--global-primary-color);
+    border-radius: var(--global-radius);
+    border: 0;
+    color: white;
+    padding: 2px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: center;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.35);
+}
+
+.wrapper_right_header div button:hover {
+    color: var(--global-primary-color);
+    border-radius: var(--global-radius);
+    outline: 1px solid var(--global-primary-color);
+    background-color: #fff;
+}
+
+#navMenu {
+    padding-right: 0px;
+    cursor: pointer;
+}
+
+#navMenu > span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    border-radius: 9999px;
+    background-color: #000;
+}
+
+#navMenu > span:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+#navMenu, #navMenu > span {
+    transition: all .4s ease-in-out;
+}
+
+#navMenu.active {
+    transition-delay: 0.8s;
+    transform: rotate(45deg);
+}
+
+#navMenu.active > span:nth-child(2) {
+    width: 0;
+}
+
+#navMenu.active > span:nth-child(1), #navMenu.active > span:nth-child(3) {
+    transition-delay: .4s;
+}
+
+#navMenu.active > span:nth-child(1) {
+    transform: translateY(9px);
+}
+
+#navMenu.active > span:nth-child(3) {
+    transform: translateY(-9px) rotate(90deg);
+}
+
+.show_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@media screen and (min-width: 610px) {
+
+    header {
+        align-items: center;
+    }
+
+    .wrapper_right_header {
+        display: flex;
+        margin-top: 0;
+    }
+
+    #navMenu {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    header > img {
+        width: 120px;
+    }
+}

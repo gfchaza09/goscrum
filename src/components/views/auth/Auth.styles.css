@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    font-family: "Nunito", sans-serif;
+}
+
+.auth {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth > form {
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth > form > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem 0rem;
+}
+
+.auth > form > div > *:not(label) {
+    padding: 8px 0;
+}
+
+.auth > form > div > input, .auth > form > div > select {
+    padding: 8px !important;
+}
+
+.auth > form > div > a {
+    text-decoration: none;
+    color: #999;
+}
+
+.auth > form > div > div {
+    color: var(--global-primary-color);
+    font-size: 14px;
+}
+
+.auth input, .auth select {
+    border-radius: var(--global-radius);
+    border: var(--global-border);
+}
+
+.auth button {
+    transition: all .3s ease-out;
+    background-color: var(--global-primary-color);
+    border-radius: var(--global-radius);
+    border: 0;
+    color: #ffffff;
+    padding: 10px !important;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.auth button:hover {
+    color: var(--global-primary-color);
+    outline: 1px solid var(--global-primary-color);
+    background-color: #ffffff;
+}
+
+.auth input.error, .auth select.error {
+    outline: 1px solid #a83939;
+}
+
+@media screen and (min-width: 600px) {
+    .auth {
+        background-color: var(--global-bg-color-soft);
+    }
+
+    .auth > form {
+        border: var(--global-border);
+        width: 400px;
+        border-radius: var(--global-radius);
+        background-color: #fff;
+    }
+}

@@ -1,0 +1,30 @@
+.donate {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.donate__btn {
+    width: 100px;
+    text-decoration: none;
+    background-color: var(--global-primary-color);
+    color: #fff;
+    padding: .5rem 1.5rem;
+    margin: 0 auto;
+    border-radius: var(--global-radius);
+    text-align: center;
+    transition: all .4s linear;
+}
+
+.donate__btn:hover {
+    color: var(--global-primary-color);
+    outline: 1px solid var(--global-primary-color);
+    background-color: inherit;
+}
